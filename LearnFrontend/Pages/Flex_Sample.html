@@ -9,7 +9,8 @@
       body {
         padding: 2em;
       }
-      header {
+      header,
+      .footer-container {
         display: flex;
         flex-flow: column wrap;
         align-content: center;
@@ -17,9 +18,120 @@
         font-weight: bold;
         padding: 10px;
       }
+
+      .main-container {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        font-weight: bold;
+      }
+
+      .footer-container {
+        background-color: lightgreen;
+      }
+
+      .mainContainerItem {
+        text-align: center;
+        background-color: deepskyblue;
+      }
+
+      article {
+        padding: 10px;
+        margin: 10px;
+        background-color: aqua;
+      }
+
+      .sideBarLeftItem {
+        background-color: yellow;
+      }
+
+      .sideBarRightItem {
+        background-color: orange;
+      }
+
+      .sideBarItem {
+        flex: 1 0 0;
+        border: 0px solid green;
+        text-align: center;
+        
+      }
+
+      .mainContainerItem{
+        flex: 3 0px;
+      }
+
+      .sideBarLeftItem{ order: 1; }
+      .mainContainerItem{ order: 2; }
+      .sideBarRightItem{ order: 3; }
     </style>
   </head>
+
   <body>
     <header>Header - Sample Flex Example</header>
+    <div class="main-container">
+      <!-- middle part -->
+      <section class="mainContainerItem">
+        <article>
+          <h2>First Article</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+            expedita ad aut perspiciatis dolor iure facere voluptates minima,
+            minus tenetur consectetur blanditiis voluptas vitae quod enim sit et
+            rerum explicabo repellendus, officiis inventore, alias ullam. Omnis
+            ab ullam eaque officia eos rerum molestias illo ea atque, obcaecati
+            autem quasi nesciunt rem soluta porro voluptatum fuga beatae
+            pariatur repellendus, cum architecto laboriosam sint. Rem magnam
+            consequatur vel, maxime dicta cumque reiciendis eaque amet,
+            doloribus dolores nobis dignissimos! Voluptas, at dolorum nihil ea
+            molestiae reiciendis sunt laboriosam molestias quisquam, vel tenetur
+            porro similique nulla, voluptatibus veniam quibusdam reprehenderit
+            eos blanditiis. Hic, natus?
+          </p>
+        </article>
+        <article>
+          <h2>Second article</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos sit
+            hic nemo odio ex, quidem provident? Magnam perspiciatis expedita
+            quam esse iure, reprehenderit cum dolor omnis hic ullam culpa,
+            explicabo ratione fuga quidem optio dicta minima consequatur
+            pariatur atque temporibus at corrupti voluptate velit. Blanditiis
+            ipsum velit nesciunt sapiente delectus quidem est minima, aperiam
+            provident earum at placeat totam tempore error ipsam voluptatem
+            tenetur suscipit iure autem! Quidem reprehenderit magnam quibusdam,
+            velit vero optio hic eveniet, natus quaerat praesentium eos, sint ad
+            recusandae ratione totam dignissimos. Magni nostrum neque quaerat
+            exercitationem quae cum, quos dicta eius. Tenetur harum expedita
+            commodi.
+          </p>
+        </article>
+        <article>
+          <h2>third article</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            sit quae nisi dolore quasi, veritatis ratione sapiente officiis
+            sequi nulla quaerat labore autem iste voluptatum necessitatibus hic
+            alias repellat voluptatibus aperiam harum, nesciunt dignissimos
+            itaque eveniet? Corrupti consequuntur qui quos amet alias sit
+            placeat eius sint at delectus, quisquam molestiae velit accusantium
+            facilis? Labore officia magni beatae laboriosam dolores impedit
+            veniam aliquam ducimus nihil. Magni, minus harum vel porro molestiae
+            nobis blanditiis? Earum placeat modi commodi, perspiciatis debitis,
+            blanditiis voluptatem, assumenda quasi doloremque dignissimos sint!
+            Numquam voluptatum culpa ea esse dolorum corrupti, deserunt debitis
+            expedita cupiditate repudiandae fugiat voluptate velit!
+          </p>
+        </article>
+      </section>
+      <!-- left side bar -->
+      <sidebar class="sideBarItem sideBarLeftItem"
+        ><div class="center"><p>Left side bar</p></div>
+      </sidebar>
+      <!-- right side bar -->
+      <sidebar class="sideBarItem sideBarRightItem"
+        ><div class="center"><p>Right side bar</p></div>
+      </sidebar>
+    </div>
+    <div class="footer-container">Footer</div>
   </body>
 </html>
