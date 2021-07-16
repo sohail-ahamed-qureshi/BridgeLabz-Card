@@ -10,13 +10,14 @@
   <body>
     <header>HTML Input Forms</header>
     <div class="mainContainer">
-      <form action="">
+      <form class="Form" action="">
         <div>
           <label for="text"> Name: </label>
-          <input type="text" placeholder=" Full Name " id="text" />
+          <input type="text" placeholder=" Full Name " id="text" autocomplete="false" />
+          <error-output class="text-error" for="text"></error-output>
         </div>
         <div>
-          <label for="pwd"> password </label>
+          <label for="pwd"> password: </label>
           <input type="password" placeholder="Password" id="password"  required />
         </div>
         <div>
@@ -36,17 +37,28 @@
           <input type="search" name="Search" id="search" placeholder="Search" />
         </div>
         <div>
-          <label for="Date"> Date and Time: </label>
-          <input type="datetime" name="DateTime" id="dateTime" />
+          <label for="Date"> Date : </label>
+          <input type="date" name="Date" id="date" />
         </div>
         <div>
           <label for="Salary">Salary: </label>
-          <input type="range" name="Salary" id="salary" />
+          <input type="range" name="Salary" id="salary" min="300000" max="500000" step="100" value="40000" />
+          <output class="salary-output" for="Salary">400000</output>
         </div>
         <div>
-          <input type="button" value="submit" />
+          <button class="button" type="button" >submit</button>
         </div>
       </form>
     </div>
+
+    <script>
+        var salary = document.querySelector("#salary");
+        var output = document.querySelector(".salary-output");
+        output.textContent = salary.value;
+        salary.addEventListener('input', function(){
+            output.textContent = salary.value;
+        });
+    </script>
+
   </body>
 </html>

@@ -57,7 +57,7 @@ footer {
   padding: 10px;
   width: 200px;
   border-radius: 10px;
-  transition:all 3s ease;
+  transform:all 5s ease;
 }
 
 .btn:hover{

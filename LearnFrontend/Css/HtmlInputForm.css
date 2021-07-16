@@ -16,7 +16,59 @@ header{
 .mainContainer{
     background-color: rgb(247, 247, 247);
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 2em;
+}
+
+.Form div{
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    margin-bottom: 20px;
+}
+
+label, input, .button, .salary-output, .text-error{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+label{
+    text-transform: capitalize;
+    text-align: right;
+    margin-right: 2%;
+    width: 30%;
+    padding: 5px;
+}
+
+input{
+    flex: auto;
+    width: 70%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    }
+
+.salary-output{
+    padding: 5px;
+}
+
+.button{
+    margin: 0 auto;
+    width: 70%;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    transform: all 5s ease;
+}
+
+.button:hover{
+    background-color: gray;
+    color: white;
+}
+
+.text-error{
+    font-style: italic;
+    color: red;
 }
