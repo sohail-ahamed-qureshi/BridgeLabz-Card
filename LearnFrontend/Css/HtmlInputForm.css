@@ -23,8 +23,8 @@ header{
 
 .Form div{
     display: flex;
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
+    justify-content: space-evenly; 
+     align-items: center;
     margin-bottom: 20px;
 }
 
@@ -66,6 +66,13 @@ input{
 .button:hover{
     background-color: gray;
     color: white;
+}
+
+.button:disabled{
+    background-color: white;
+    opacity: 0.5;
+    color: gray;
+    border: 1px solid gray;
 }
 
 .text-error{
