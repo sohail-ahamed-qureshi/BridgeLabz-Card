@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: cadetblue;
+    align-content: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.mainContainer{
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+}
