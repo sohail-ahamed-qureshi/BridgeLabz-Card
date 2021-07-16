@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header,
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: aqua;
+  align-content: center;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.mainContainer {
+  background-color: gainsboro;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  border: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+}
+
+.cards .columns {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  color: aliceblue;
+  margin: 10px;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+  max-width: 23vw;
+  text-align: center;
+}
+
+
+footer {
+  background-color: gray;
+  color: aliceblue;
+}
+
+.ControlContainer{
+  display:  flex;
+  flex-flow: row;
+  align-content: center;
+  
+  margin: 10px;
+  padding: 10px;
+}
+
+.btn{
+  margin-right: 10px;
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  transition:all 3s ease;
+}
+
+.btn:hover{
+  background-color: gray;
+  color: aliceblue;
+
+
+}
