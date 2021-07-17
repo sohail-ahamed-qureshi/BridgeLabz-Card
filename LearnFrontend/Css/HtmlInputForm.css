@@ -13,12 +13,13 @@ header{
     font-size: 20px;
 }
 
-.mainContainer{
+.mainContainer, .tableContainer{
     background-color: rgb(247, 247, 247);
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
     padding: 2em;
+    margin-bottom: 10px;
 }
 
 .Form div{
@@ -78,4 +79,32 @@ input{
 .text-error{
     font-style: italic;
     color: red;
+}
+
+/* table styling */
+.tableContainer{
+   
+    max-width: 1000px;
+}
+
+table{    
+border: 1px solid white;
+background-color: wheat;
+width: 100%;
+padding: 10px;
+border-collapse: collapse;
+
+}
+
+table th, table td{
+    background-color: lightgreen;
+    border: 1px solid white;
+    color: gray;
+    text-align: center;
+    height: 20px;
+    padding: 10px;
+}
+
+table tbody tr td{
+    color: black;
 }
